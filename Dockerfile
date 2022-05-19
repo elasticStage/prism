@@ -66,6 +66,6 @@ RUN if [ "$BUILD_TYPE" = "development" ] ; then \
     cd /usr/src/prism/packages/cli && yarn link @stoplight/prism-core && yarn link @stoplight/prism-http && yarn link @stoplight/prism-http-server && yarn link ; \
 fi
 
-EXPOSE 4010
+# EXPOSE 4010
 
 ENTRYPOINT [ "node", "dist/index.js" ]
